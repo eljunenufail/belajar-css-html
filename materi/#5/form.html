@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- buat thame nya kalo terang (light) kalo gelap (dark)   -->
+<html lang="en" 
+data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BELAJAR HTML - FORM- </title>
+    
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+
+</head>
+<body>
+    <!-- bair lebih rapih make container -->
+    <main class="container">
+    <h1>HTML 5 form</h1>
+    <hr/>
+    <h3>input</h3>
+    <form>
+        <!-- input : kolom input serbaguna (pendek) -->
+         <!-- tips shorcuut : input:(type-nya) -->
+         <div>
+        <label for="namaLengkap">Nama lengkap</label>
+         <input type="text" name="nama_lengkap" id="namaLengkap">
+    
+    </div>
+    <br>
+    <div>
+        <label for="umur">Umur</label>
+        <input type="number" name="umur" id="umur">
+    </div>
+    <br>
+    <div>
+        <label for="tglLahir">Umur</label>
+        <input type="date" name="tgl_lahir" id="tglLahir">
+    </div>
+    
+    <!-- grid biar reset sama simpan nya sejajar -->
+    <br>
+    <div>
+        <label for="alamatEmail">Almat email</label>
+        <input for="email" name="email" id="alamatEmail">  
+    </div>
+    <br>
+    <div>
+        <label for="password">Password</label>
+        <input for="password" name="password" id="password">
+        </div>
+    <br>
+    <div>
+        <p>Jenis kelamin</p>
+        <input type="radio" name="jenis_kelamin" id="lakiLaki">
+        <input type="checkbox" name=""
+        <label for="lakiLaki">laki-laki</label>
+        <input type="radio" name="jenis_kelamin" id="perempuan">
+        <label for="perempuan">perempuan</label>
+        <br /><br /><br />
+    </div>
+    <br>
+       <div>
+          <p>Minat Bahasa</p>
+          <input type="checkbox" name="minat" id="english" />
+          <label for="english">English</label>
+          <input type="checkbox" name="minat" id="japanese" />
+          <label for="japanese">Japanese</label>
+          <input type="checkbox" name="minat" id="arabic" />
+          <label for="arabic">Arabic</label>
+          <br /><br />
+        </div>
+        <div>
+          <label for="asalDaerah">Asal Daerah</label>
+          <select name="asal_daerah" id="asalDaerah">
+            <option value="PRJ">Purworejo</option>
+            <option value="YOG">Yogyakarta</option>
+            <option value="JKT">Jakarta</option>
+          </select>
+        </div>
+        <div>
+          <label for="note">Catatan</label>
+          <textarea name="note" id="note"></textarea>
+        </div>
+    </div>
+    <br>
+     <div class="grid">
+        <!-- action button -->
+        <!-- tips shorcut: button:[type-nya] -->
+        <button type="reset">reset</button>
+        <button type="submit">simpan</button>
+    </div>
+    </form>
+    </main>
+</body>
+</html>
