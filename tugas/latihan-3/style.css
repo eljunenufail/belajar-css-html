@@ -1,37 +1,299 @@
-.body {
-  font-family: Arial, sans-serif;  /* Font utama halaman */
-  background: #f9fafb;             /* Warna latar belakang abu muda */
-  color: #111827;                  /* Warna teks abu gelap */
-  margin: 100px;                    /* Jarak luar halaman */
-  line-height: 1.6;                /* Jarak antar baris teks */
+body {
+ 
+  margin: 40px;
+  background: linear-gradient(270deg, #878ede, #fbfcfe);
+
+}
+/* untuk atasan nya */
+.header {
+  background: rgb(227, 224, 224);
+  color: white;
+  padding: 15px;        /* jarak dalam */
+  text-align: center;     /* biar teks di tengah */
+  border-radius: 50px;
+}
+.nav {
+  margin-top: 10px;   /* jarak atas */
+  background: wihite;
+  padding: 10px;    /* jarak dalam */
+}
+.nav a {
+     display: inline-block;
+      padding: 8px 18px;
+      margin: 5px;
+      border: 1px solid #252525;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #374151;
+      font-size: 14px;
+      transition: all 0.3s;
+}
+/* hover itu efek sementara yang muncul saat kursor
+ diarahkan ke tombol (tapi belum diklik). */
+.nav a:hover {
+  background: blue; /* Kalau mouse diarahkan ke tombol,
+   background-nya berubah jadi biru backround nya.*/
+  color: rgb(255, 255, 255);       /* teks putih saat hover */
 }
 
+
+
+/* artinya tombol dalam keadaan pas ditekan ( kalo misalkan klik mouse masih nempel).
+pas dilepas, efeknya  bakal hilang. */
+.nav a.active {
+    background-color:#1d4ed8;
+    background: #1d4ed8;
+    color:#ffffff;
+    
+}
+
+/* --------------------------- */
+
+/* untuk bagian isi */
+.container {
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+/* Judul utama */
+h1 {
+  color: #1e3a8a;                  /* Warna biru tua untuk h1 */
+}
+
+/* Section title dengan border-left */
+.section-title {
+  padding-left: 10px;              /* jadiin Spasi teks dari garis kiri */
+  border-left: 4px solid gold;  /* ngadain Garis tebal hijau di kiri */
+  color:blue;                  /* Warna teks abis garis nya hijau gelap */
+}
+
+/* Box konten */
 .box {
   background: #fff;                /* Latar belakang  web nya putiiih */
   border: 1px solid #e5e7eb;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
-  border-radius: 20px;             /* Sudut kotak melengkung kagak terlalu tegang */
-  padding: 15px;                   /* Spasi dalam kotak nya mas*/
-  margin-bottom: 5px;              /* Jarak antar kotak yang ada di atas nya boy */
-  margin-top: 80px;
-  
-  
+  border-radius: 12px;             /* Sudut kotak melengkung kagak terlalu tegang */
+  padding: 10px;                   /* Spasi dalam kotak nya mas*/
+  margin-bottom: 8px;              /* Jarak antar kotak yang ada di atas nya boy */
+}
+
+/* Foto */
+.photo {
+  border-radius: 50%;              /* Membuat foto lo bulat */
+  margin-bottom: 10px;             /* Jarak bawah foto */
+}
+
+/* Avatar */
+.avatar {
+  width: 220px;                    /* Lebar foto */
+  height: 220px;                   /* Tinggi foto */
+  object-fit: cover;               /* Foto menyesuaikan sama kotak  */
+  border-radius: 50%;              /* Membuat bentuk lingkaran */
+  border: 3px solid #e5e7eb;       /* Garis abu ke putihan tipis di sekeliling foto samain yang kayak di atas nya mas */
+}
+
+/* -------------------------------- */
+
+
+/* galerii */
+
+
+
+.gallery {
+    text-align: center;      /* biar teks di tengah sepertibiasa */
 
 }
-.container {
-  max-width: 1500px;   /* batas lebar tengah */
-  margin:  auto;     /* otomatis tengah kiri-kanan */
-  padding: 20px;
- 
-}
-.nav-link :active{
-    background: #fff;
+
+.gallery h2 {
     color: blue;
-    background-color: #e5e7eb;
+}
+
+.gallery p {
+    font-size: 14px;
+    color: grey;
+}
+
+.gallery .card {
+    display: inline-block;   /* biar sejajar ke samping gambar nye waa */
+    width: 200px;
+    border: 1px solid #ddd;
+    background: #fff;
+    margin: 12px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 
-.a {
-  color: black;                  /* Warna biru standar untuk link */
-  text-decoration: none;           /* Menghilangkan garis bawah */
-  transition: 0,3s;
+.gallery .card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;      /* biar gambarnya pas sama di kootaak nyaaa */
+
 }
+
+.gallery .card figcaption {
+    font-size: 16px;
+    color: #000000;
+   
+    padding: 4px;
+     
+}
+.gallery .card figcaption {
+    font-size: 16px;
+    color: #fff;
+    background-color:grey;
+    margin-top: -7px;
+    padding: 4px;
+     
+}
+    audio {
+  margin-top: 20px;
+  width: 300px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  border-radius: 10px;
+}
+
+
+/* ------------------- */
+
+/* jadwal */
+.jadwal {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  
+  
+}
+
+
+  table {
+  width: 100%;
+  /** gabungkan border tabel jadi 1 **/
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  padding: 50px;
+   object-fit: cover;
+  }
+      /* pakai , (koma) agar bisa di terapkan multiple efek */
+
+thead th {
+        padding: 10px;
+        background: #1e3a8a;
+        color: #d1d5db;
+        border: 0,50px solid white;
+        text-align: center;     /* biar teks di tengah */
+      }
+tbody th {
+      padding: 52px;
+      border: 0,50px solid white;
+      text-align: center;     /* biar teks di tengah */
+      }
+      
+tbody tr:nth-child(even) {
+  background: #f3f4f6;}
+
+
+
+
+.kotak {
+  background:rgb(227, 224, 224);                /* Latar belakang  web nya putiiih */
+  border: 1px solid #000000;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
+  border-radius:50px;             /* Sudut kotak melengkung kagak terlalu tegang */
+  padding: 0px;                   /* Spasi dalam kotak nya mas*/
+  margin-bottom: 10px;              /* Jarak antar kotak yang ada di atas nya boy */
+   object-fit: cover; 
+}
+
+
+
+/* ------------------------------- */
+/* feedback */
+
+
+
+.form-container {
+  max-width: 4000px;
+  margin:10px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  color: #1d4ed8;
+  border-left: 4px solid #1d4ed8;
+  padding-left: 1px;
+}
+
+p {
+  color: #374151;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.radio-group, .checkbox-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+
+.radio-group label,
+.checkbox-group label {
+  font-weight: 10;
+  color: #374151;
+}
+
+button {
+  margin-top: 20px;
+  width: 10%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+
+
+
+
+

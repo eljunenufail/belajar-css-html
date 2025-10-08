@@ -1,0 +1,102 @@
+/* Reset sederhana */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Warna latar untuk memvisualisasikan blok */
+header,
+.header {
+  background: #4caf50;
+  color: white;
+  padding: 15px;        /* jarak dalam */
+  text-align: center;     /* biar teks di tengah */
+
+}
+header {
+    background: blue;
+}
+nav,
+.nav {
+  margin-top: 10px;   /* jarak atas */
+  background: #45a049;
+  padding: 10px;    /* jarak dalam */
+}
+
+nav {
+    background: rgb(56, 85, 182);
+}
+
+nav a,
+.nav a {
+  color: green;
+  text-decoration: none; /* hapus garis bawah */
+  border-radius: 22px; /* ubah sudut jadi bulat */
+  background: #fff;
+  padding: 6px 14px;           /* jarak dalam kotak (atas/bawah 6px, kanan/kiri 14px) */
+  /* padding-top: 6px; */
+  /* padding-bottom: 6px; */
+  /* padding-left: 14px; */
+  /* padding-right: 14px; */
+  margin-right: 8px; /* jarak luar antar link */
+}
+
+nav a{
+    background:  white;
+    color:blue;
+}
+
+main,
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Section / Artikel utama */
+section,
+.section {
+  flex: 2;
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Article khusus */
+article,
+.article {
+  background: #bbdefb;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Sidebar / aside */
+aside,
+.aside {
+  flex: 1;
+  background: #ffe082;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer,
+.footer {
+  background: black;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+
+.active{
+    background:white;
+    color: black;
+}
+.active {
+  background-color:white; /* Warna latar belakang hijau */
+  color: green; /* Warna teks putih */
+}

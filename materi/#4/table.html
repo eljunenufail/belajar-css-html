@@ -1,139 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>BELAJAR TABLE DI HTMl</h1>
-
-    <hr/>
-
-    <table>
-          <!-- attr border 1 : garis tepi -->
-
-        <table border="1">
-            
-            <!-- tr>td*3: buat struktur baris kolom  x  3 kolom  -->
-        <tr>
-            <td><b>NO</b></td>
-            <td><b>NAMA LENGKAP</b></td>
-            <td><b>KELAS</b></td>
-            <td><b>ASAL KOTA</b></td>
-            <td><b>KEWARGANEGARAAN</b></td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>ahmad nufail aljunaid</td>
-            <td>x A</td>
-            <td>bekasi</td>
-            <td>indonesia</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Ucok</td>
-            <td>x A</td>
-            <td>los angles</td>
-            <td>amerika</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Nek Yanti</td>
-            <td>x A</td>
-            <td>kerakatau</td>
-            <td>indonesia</td>
-        </tr>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Table di HTML</title>
+    <style>
+      table {
+        width: 60%;
+        /** gabungkan border tabel jadi 1 **/
+        border-collapse: collapse;
+      }
+      /* pakai , (koma) agar bisa di terapkan multiple efek */
+      td,
+      th {
+        padding: 6px;
+      }
+      th {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Belajar Table di HTML</h1>
+    <hr />
+    <!-- attr border 1 => garis tepi 1px -->
+    <table border="1">
+      <!-- tr>td*3: buat struktur baris x 3 kolom -->
+      <tr>
+        <td>No</td>
+        <td>Nama Lengkap</td>
+        <td>Asal Kota/Kab</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Khosyi</td>
+        <td>Sanggau, Kalbar</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Abdul Hakim</td>
+        <td>Solo, Jawa Tengah</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Juna</td>
+        <td>Planet Bekasi, Mars</td>
+      </tr>
     </table>
 
     <!-- standar table di html 5 -->
     <!-- table>thead+tbody+tfoot -->
-    <h2>TABLE BELANJAAN</h2>
+    <h2>Daftar Belanja</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Barang</th>
+          <th>Harga</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Es Teh Desa</td>
+          <td>Rp 2.500,-</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Nasi Padang Kawan Lamo</td>
+          <td>Rp 10.000,-</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Roti Gembul Coklat Kacang</td>
+          <td>Rp 20.000,-</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td><b>Total Pengeluaran</b></td>
+          <td><b>Rp 32.500,-</b></td>
+        </tr>
+      </tfoot>
+    </table>
 
-    <table border="1" style="width: 50%">
-        <thead> 
-         <tr>
-             <th>NO</th>
-             <th>BARANG</th>
-             <th>HARGA BARANG</th>
-         </tr>
-
-        </thead>
-        
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Es Teh desa</td>
-                <td>2500</td>
-                
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>mie gacoan</td>
-                <td>11000</td>
-                
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-                <th><b>3</b></th>
-                <th><b>TOTAL</b></th>
-                <th><b>13500</b></th>
-            </tr>
-
-          </tfoot>
-        </table>
-        <br/><br/>
-
-        <h2>TABLE PIKET</h2>
-
-
-        <table 
-        border="1"
-         style="width: 50%">
-            <thead>
-                <tr>
-                    <th rowspan="2">NO</th>
-                    <th colspan="7">PEKAN 1</th>
-                   
-                    
-                <tr>
-                    <th>senin</th>
-                    <th>selasa</th>
-                    <th>rabu</th>
-                    <th>kamis</th>
-                    <th>jumat</th>
-                    <th>sabtu</th>
-                    <th>ahad</th>
-                </tr>
-            </thead>
-            <tbody>
-                <td>1</td>
-                <td>Dadang</td>
-                <td>juna</td>
-                <td>septian</td>
-                <td>botak</td>
-                <td>harun</td>
-                <td>upin</td>
-                <td>syahid</td>
-
-            </tbody>
-        </table>
-
-
-        <style>
-            table {
-                width: 60%;
-                /* gabiungkan table boder jadi 1 */
-                border-collapse: collapse;
-            }
-
-            /* pakaia koma agar bisa di terpakan multiple efek */
-            th,
-            tr {
-        display: table-row;
-          border-color: inherit;
-
-        </style>
-</body>
+    <h2>Daftar Piket</h2>
+    <p>Belajar attribute `rowspan` dan `colspan`</p>
+    <table border="1">
+      <thead>
+        <tr>
+          <th rowspan="2">No</th>
+          <th colspan="7">Pekan 1</th>
+        </tr>
+        <tr>
+          <!-- hilangkan th yg di awal karna sdh rowspan -->
+          <th>Senin</th>
+          <th>Selasa</th>
+          <th>Rabu</th>
+          <th>Kamis</th>
+          <th>Jum'at</th>
+          <th>Sabtu</th>
+          <th>Ahad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Ujang</td>
+          <td>Budi</td>
+          <td colspan="2">Gojo Slamet</td>
+          <td rowspan="2">Eren Aditya</td>
+          <td>Rikimaru</td>
+          <td>Benomaru</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Kunai</td>
+          <td>Sappo</td>
+          <td>Polo</td>
+          <td>Jarwo</td>
+          <!-- <td>Adit</td> -->
+          <td>Demon</td>
+          <td>Chimera</td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br /><br />
+    <br /><br /><br />
+  </body>
 </html>
