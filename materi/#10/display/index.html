@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3: Display & Flexbox</title>
+    <!-- pico css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- beri space di kiri-kanan halaman -->
+    <div class="container">
+      <h1>CSS3: Display & Flexbox</h1>
+      <hr />
+      <h2>Bagian 1: Display</h2>
+      <!-- grid area -->
+      <div class="grid">
+
+
+
+        <!-- card box a -->
+        <div class="card">
+          <code>Display: block</code>
+          <div class="area">
+            <h3>Box 1</h3>
+            <p>(Konten 1)</p>
+          </div>
+          <div class="area">
+            <h3>Box 2</h3>
+            <p>(Konten 2)</p>
+          </div>
+        </div>
+        <!-- end card box fixed -->
+
+
+
+        <!-- card box b -->
+        <div class="card">
+          <code>Display: inline block</code>
+          <div class="area area-inline-block">
+            <h3>Box 1</h3>
+            <p>(Konten 1)</p>
+          </div>
+          <div class="area area-inline-block">
+            <h3>Box 1</h3>
+            <p>(Konten 1)</p>
+          </div>
+          <!-- end card box fixed -->
+        </div>
+        
+        <!-- card box c -->
+        <div class="card">
+          <code>Display: inline </code>
+          <div class="area area-inline">
+            <p>(1)</p>
+            <p>(1)</p>
+            <p>(1)</p>
+          </div>
+        </div>
+        <!-- end card box fixed -->
+
+
+
+
+        <!-- card box d -->
+        <div class="card">
+          <code>Display: none </code>
+          <div class="area area-none">
+            <h3>Liat</h3>
+            <p>kosong</p>
+          
+          </div>
+        </div>
+        <!-- end card box fixed -->
+        
+      </div>
+    </div>
+
+
+    <br>
+    <hr>
+    <br>
+    <hr>
+    
+    <H2>bagian 2: flex box (basic)</H2>
+    <div class="Flexbox-area">
+      <div class="card">
+        <p>box 1</p>
+      </div>
+      <div class="card">
+        <p>box 2</p>
+      </div>
+      <div class="card">
+        <p>box 3</p>
+      </div>
+    </div>
+  </body>
+</html>

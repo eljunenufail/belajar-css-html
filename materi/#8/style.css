@@ -1,0 +1,106 @@
+
+@import 
+    url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap');
+
+.playwrite{
+    font-family: 'playwrite DE SAS', cursive;
+}
+
+
+
+@font-face{
+    font-family: font digital;
+    src: url('fonts/digital-7.ttf');
+}
+
+.digital {
+    font-family: font digital;
+}
+
+
+
+
+.text-tengah {
+    text-align: center;
+}
+
+.text-kiri {
+    text-align: left;
+}
+
+.text-kanan {
+    text-align: right;
+}
+
+.text-rata {
+    text-align: justify;
+}
+
+
+/* atur ketebalan */
+.agak-tebal {
+    font-weight:600;
+    color: brown;
+    /* atur ukuran */
+    font-size: 30px;
+
+}
+
+.tebal{
+    /* bold 700 */
+    font-weight:bold;
+    color: blueviolet;
+    font-size: x-large;
+}
+
+.tipis{
+    font-weight: 100;
+    color: gold;
+    font-size: small;
+}
+
+
+/* text decoration */
+.button{
+    /* hilangkan garis bawah di link a */
+    text-decoration: none;
+    background-color: blueviolet;
+    color: antiquewhite;
+    padding: 4px 6px;}
+
+
+
+
+/* Text spacing / sepasi ke bawah nya mass*/
+.pendek {
+    line-height: 0.8;
+    background-color: brown;
+    color: white;
+}
+.tinggi {
+    line-height: 2;
+    background-color:antiquewhite;
+    
+/* atur jarak antar huruf */
+
+}
+.rapat{
+    letter-spacing:-2px;
+    background-color:aqua;
+}
+.renggang{
+    letter-spacing:6px;
+    background-color:blueviolet;
+    color: white    ;
+}
+
+/* atur jarak antar kata */
+.dekat{    
+    word-spacing: -3px;
+    background-color: aquamarine;
+ }
+.jauh{    
+    word-spacing: 6px;
+    background-color:blue;
+    color: aliceblue;
+ }

@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'BismillahScript';
+  src: url('fonts/Bismillah Script.ttf');
+ 
+}
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Bitcount+Prop+Single+Ink:wght@100..900&family=Cinzel+Decorative:wght@400;700;900&family=Gravitas+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+.utama{
+    font-family: Cinzel Decorative
+}
+
+.bawah{
+  color: white;
+}
+
+.signature {
+  font-family: 'BismillahScript';
+  text-align: right;
+}
+
+
+header,
+.header {
+  color: #fff;
+  background: #2a009c;                /* Latar belakang  web nya putiiih */
+  border: 1px solid #e5e7eb;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
+  border-radius: 12px;             /* Sudut kotak melengkung kagak terlalu tegang */
+  padding: 50px;                   /* Spasi dalam kotak nya mas*/
+  margin-bottom: 50px;              /* Jarak antar kotak yang ada di atas nya boy */
+  box-shadow: #1d4ed8;
+  text-align: center;
+  margin: 30px 30px 30px;
+
+}
+
+section,
+.section {
+  flex: 2;
+  background:gray;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+main,
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  box-shadow: 2px 2px 2px 2px gray;
+  margin: 30px 30px 30px;
+  border-radius: 12px;
+
+}
+
+.merah{
+  color: red;
+}
+
+.warna{
+  color:blue;
+}
+
+
+/* KOTAK KUTIPAN */
+.quote-box {
+  background-color: #eaf1ff;        /* warna biru muda */
+  border-left: 6px solid #1d4ed8;   /* garis vertikal biru di kiri */
+  padding: 12px 16px;               /* jarak dalam kotak */
+  border-radius: 4px;               /* sudut agak melengkung */
+  margin: 30px 30px 30px;
+  font-weight: 500;
+  box-shadow: 2px 2px 2px 2px gray;
+}
+
+/* KOTAK CATATAN */
+.note-box {
+  background-color: #fff5f5;              
+   border-left: 6px solid #dc2626;    
+   color: #b91c1c;
+  padding: 12px 16px;              
+  border-radius: 4px;              
+  margin: 30px 30px 30px;
+ box-shadow: 2px 2px 2px 2px gray;
+  font-weight: 500;
+}
+.signature {
+  font-family: 'BismillahScript', cursive;
+  font-size: 22px;
+  color: #000000;
+  text-align: right;
+}
+.atas{
+  
+  font-size: 22px;
+  color: #000000;
+  text-align: right;
+}

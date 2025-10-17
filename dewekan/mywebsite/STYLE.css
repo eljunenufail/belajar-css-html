@@ -1,0 +1,121 @@
+body{
+    text-align: center;
+background: #003973;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* //TULISAN */
+
+h1 {
+    color:rgb(0, 0, 0) ;
+    font-family:Helvetica,roboto;
+}
+ 
+      .typed-out {
+  overflow: hidden;
+  border-right: .15em solid rgb(0, 0, 0);
+  font-size: 1.6rem;
+  width: 0;
+}
+.container {
+  display: inline-block;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 0, 0);
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 1s forwards;
+}
+.typed-out{
+  overflow: hidden;
+  border-right: .15em solid rgb(0, 0, 0);
+  white-space: nowrap;
+  font-size: 1.6rem;
+  width: 0;
+  animation: 
+    typing 1s steps(20, end) forwards;
+}
+/* BUTTON nya*/
+/* CSS */
+.button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+.box {
+  background: #fff;                /* Latar belakang  web nya putiiih */
+  border: 1px solid #e5e7eb;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
+  border-radius: 12px;             /* Sudut kotak melengkung kagak terlalu tegang */
+  padding: 1000px;                   /* Spasi dalam kotak nya mas*/
+  margin-bottom: 8px;              /* Jarak antar kotak yang ada di atas nya boy */
+  box-shadow: #1d4ed8;
+}

@@ -1,0 +1,105 @@
+.card{
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 2px #6b6565;
+    color: black;
+    padding: 6px;
+    text-align: center;
+}
+
+/* box polos hanya konten */
+
+#box1 {
+    width: 200px;
+    height: 200px;
+    background-color:orange;
+    color:white;
+   line-height: 10;             /* biar text yang ada dalam box 1 ini di  tengah  */
+   
+   
+   
+   
+}
+
+
+#box2{
+    
+    width: 200px;
+    height: 200px;
+    background-color:blue;
+    color:white;
+    line-height: 10;             /* biar text yang ada dalam box 1 ini di  tengah  */
+    /* padding: 10px; */
+    /* padding: 10px 20px 12px 20px */
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-left: 12px;
+    padding-bottom: 20px;
+}
+#box3{
+
+    width: 200px;
+    height: 200px;
+    background-color:indigo;
+    color:white;
+    line-height: 10;             /* biar text yang ada dalam box 1 ini di  tengah  */
+    padding: 10px;
+    border:1px solid aqua
+}
+#box4{
+
+    width: 200px;
+    height: 200px;
+    background-color:burlywood;
+    color:white;
+    line-height: 10;             /* biar text yang ada dalam box 1 ini di  tengah  */
+    padding: 10px;
+    border:5px solid red
+    /* margin:20px; */
+    /* margin:20px 10px 20px 10px */
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+}
+
+
+#box5{
+    width: 200px;
+    height: 200px;
+    background-color:rgb(168, 46, 46);
+    color:white;
+    line-height: 10;             /* biar text yang ada dalam box 1 ini di  tengah  */
+
+}
+#box6  {
+   width: 200px;
+    height: 200px;
+    background-color:aqua;
+    color:white;
+    line-height: 10;             /* biar text yang ada dalam box 1 ini di  tengah  */
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+    
+#box7  {
+   width: 200px;
+    height: 200px;
+    background-color:aqua;
+    color:white;
+    line-height: 10;             /* biar text yang ada dalam box 1 ini di  tengah  */
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+#box8 {
+   width: 200px;
+    height: 200px;
+    background-color:gray;
+    color:white;
+    line-height: 10;             /* biar text yang ada dalam box 1 ini di  tengah  */
+    position: fixed;
+    top: 25px;
+    right: 40px;
+}

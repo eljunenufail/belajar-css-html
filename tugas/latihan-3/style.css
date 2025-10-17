@@ -3,7 +3,23 @@ body {
   margin: 40px;
   background: linear-gradient(270deg, #878ede, #fbfcfe);
 
+
 }
+
+
+.box {
+  background: #fff;                /* Latar belakang  web nya putiiih */
+  border: 1px solid #e5e7eb;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
+  border-radius: 12px;             /* Sudut kotak melengkung kagak terlalu tegang */
+  padding: 1000px;                   /* Spasi dalam kotak nya mas*/
+  margin-bottom: 8px;              /* Jarak antar kotak yang ada di atas nya boy */
+  box-shadow: #1d4ed8;
+}
+
+
+
+
+
 /* untuk atasan nya */
 .header {
   background: rgb(227, 224, 224);
@@ -74,6 +90,15 @@ h1 {
   border-radius: 12px;             /* Sudut kotak melengkung kagak terlalu tegang */
   padding: 10px;                   /* Spasi dalam kotak nya mas*/
   margin-bottom: 8px;              /* Jarak antar kotak yang ada di atas nya boy */
+  box-shadow: #1d4ed8;
+}
+.kotak {
+  background:rgb(227, 224, 224);                /* Latar belakang  web nya putiiih */
+  border: 1px solid #000000;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
+  border-radius:50px;             /* Sudut kotak melengkung kagak terlalu tegang */
+  padding: 0px;                   /* Spasi dalam kotak nya mas*/
+  margin-bottom: 10px;              /* Jarak antar kotak yang ada di atas nya boy */
+   object-fit: cover; 
 }
 
 /* Foto */
@@ -198,14 +223,6 @@ tbody tr:nth-child(even) {
 
 
 
-.kotak {
-  background:rgb(227, 224, 224);                /* Latar belakang  web nya putiiih */
-  border: 1px solid #000000;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
-  border-radius:50px;             /* Sudut kotak melengkung kagak terlalu tegang */
-  padding: 0px;                   /* Spasi dalam kotak nya mas*/
-  margin-bottom: 10px;              /* Jarak antar kotak yang ada di atas nya boy */
-   object-fit: cover; 
-}
 
 
 
