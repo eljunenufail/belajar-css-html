@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3: Display & Flexbox</title>
+    <!-- pico css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+   <body>
+
+    <!-- beri space di kiri-kanan halaman -->
+    <div class="container">
+      <h1>CSS3: Display & Flexbox</h1>
+      <hr />
+      <br>
+      <h2>Latihan 1: pricing box</h2>
+      <!-- wadah parent dari flexbox -->
+
+      <div class="Flexbox-area">
+        <!-- flexbox yang ada di dalam -->
+
+        <div class="card">
+          <h3>basic</h3>
+        </div>
+
+
+        <div class="card pro-blue">
+          <h3>pro</h3>
+        </div>
+
+
+        <div class="card">
+          <h3>enterprise</h3>
+        </div>
+
+
+        <!-- end card box fixed -->
+
+      </div>
+      <br>
+      <br>
+      <br>
+     <h2>Latihan 2: Alert info</h2>
+      <div class="flexbox-area Alert-info">
+        <p> ℹ️ info: jangan samapai ketumpahan indomie</p>
+        <button type="button"
+         onclick="this.parentElement.style.display='none'">❌
+        </button>
+    </div>
+
+    
+    </div>
+  </body>
+</html>

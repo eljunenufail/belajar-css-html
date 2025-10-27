@@ -68,7 +68,7 @@ main,
   padding: 12px 16px;               /* jarak dalam kotak */
   border-radius: 4px;               /* sudut agak melengkung */
   margin: 30px 30px 30px;
-  font-weight: 500;
+  font-weight: 500; 
   box-shadow: 2px 2px 2px 2px gray;
 }
 

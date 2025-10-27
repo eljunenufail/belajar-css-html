@@ -1,0 +1,80 @@
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 200px;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.area {
+  width: 200px;
+  height: 200px;
+  place-content: center;
+}
+
+.area h3,
+.area p {
+  margin: 0 auto;
+}
+.area p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* wadah perent flex box */
+.Flexbox-area{
+
+  /* wajib flex */
+  display: flex;
+
+  /* atur arah flex item */
+  /* default = row */
+  flex-direction: row;
+
+  /* ataur jarak antar item */
+  gap: 12px;
+
+  /* atur posisi horizontal */
+  /* default = flex-strat */
+  justify-content: center;
+
+  /* atur posisi penetempatan nya 
+  default = flex-end
+  (felx-end, center, streech, */
+  align-items: center;
+ 
+}
+
+.pro-blue{
+  border-color: blue;
+ 
+  width: 250px;
+  height: 250px;
+}
+
+
+
+
+.Alert-info{
+  background: #a0e3fd;
+  justify-content:space-between ;
+  padding: 10px;
+    display: flex;
+  /* atur penempatan items secara horizontal */
+  /* gap = jarak antar items */
+  gap: 12px;
+  /* atur posisi item mengikuti titik tengah atau sumbu x */
+  align-items: center;
+  
+  
+
+}
+
+.Alert-info button{
+  font-size: 12px;
+  background: #a0e3fd;
+  border: none;
+  
+}

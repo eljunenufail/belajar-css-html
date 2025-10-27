@@ -1,0 +1,94 @@
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 250px;
+  width: 250px;
+  border: 2px dashed #333;
+  border-radius: 6px;
+}
+
+.flex-area{
+  display: flex;
+  gap: 14px;
+}
+
+header{
+  text-align: center;
+  background: coral;
+}
+
+header h1,header p{
+  color:white;
+}
+
+nav{
+  display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+nav ul li a{
+  background: white;
+  color:black;
+  padding: 6px 20px;
+}
+
+nav ul{
+  gap:12px;
+}
+
+
+/* ukuran 1024px => desktop++ */
+@media screen and (min-width: 1024px) {
+  /* masukkan tag / target selector */
+  header{
+    background: plum;
+  }
+}
+
+/* ukuran 768-1023px => tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* masukkan tag / target selector */
+   header{
+    background: moccasin ;
+  }
+}
+
+/* ukuran max 767px => smartphone */
+@media screen and (max-width: 767px) {
+  /* masukkan tag / target selector */
+ nav {
+    display: block;
+    padding-inline: 0;
+    margin: 0;
+  }
+
+  /* Tumpuk item & lebarkan ke kontainer */
+  nav ul {
+    flex-direction: column; /* menurun */
+    align-items: stretch; /* isi lebar penuh */
+    gap: 0.5rem;
+    padding: 12px;
+    margin: 0 !important;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Link jadi tombol penuh (full width) */
+  nav li a {
+    display: block; /* dari inline → block */
+    padding: 0.75rem 1rem;
+    margin: 0;
+  }
+}
+
+
+
+
+

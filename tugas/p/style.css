@@ -1,0 +1,35 @@
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 200px;
+  width: 200px;
+  border: 2px solid #eaeaea;
+  border-radius: 6px;
+}
+.border-blue {
+  border-color: blue;
+  height: 220px;
+  width: 220px;
+}
+
+/* wadah/parent flex-nya */
+.flex-area {
+  display: flex;
+  /* atur penempatan items secara horizontal */
+  justify-content: center;
+  /* gap = jarak antar items */
+  gap: 12px;
+  /* atur posisi item mengikuti titik tengah atau sumbu x */
+  align-items: center;
+}
+
+.alert {
+  width: 600px;
+  background: #bedef8;
+  justify-content: space-between;
+}
+.alert button {
+  background: #333;
+}

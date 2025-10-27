@@ -1,0 +1,191 @@
+.body {
+  margin: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background:gray;
+}
+
+h1{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.box {
+    
+  background: #ffffff;                /* Latar belakang  web nya putiiih */
+  border: 1px solid #ddd;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
+  border-radius: 12px;             /* Sudut kotak melengkung kagak terlalu tegang */
+  padding: 10px;                   /* Spasi dalam kotak nya mas*/
+  margin:40px 40px 40px 40px ;     /* Jarak antar kotak yang ada di atas nya boy */
+  box-shadow: 0.8px 0.8px 0.8px 0.8px gray;
+
+}
+h2{
+  text-align:end left;
+
+}
+
+.biru{
+  color: #1b3a3e;
+}
+
+.Alert-info{
+   background: #a0e3fd;
+   justify-content:space-between ;
+   padding: 10px;
+   display: flex;
+   /* atur penempatan items secara horizontal */
+   /* gap = jarak antar items */
+   gap: 12px;
+   /* atur posisi item mengikuti titik tengah atau sumbu x */
+   align-items: center;
+   border-radius: 12px;
+   color:#1b3a3e;
+
+}
+button{
+  cursor: pointer;
+  font-weight: bold;
+  background: #a0e3fd;
+  
+  border: none;
+}
+
+.container {
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+
+.profile-card {
+  width: 240px;
+  padding: 24px 0;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow:  2px 12px rgba(0,0,0,0.07);
+  text-align: center;
+  margin: 40px auto;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 80px;
+  margin: 0 auto 12px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+}
+
+
+.badge {
+  position: absolute;
+  right: 6px;
+  bottom: 8px;
+  width: 20px;
+  height: 18px;
+  background: #38c354;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(56,195,84,0.2);
+  margin-right: -5px;
+}
+/* kotak premium */
+
+
+.abu-abu{
+ color: gray;
+}
+
+
+/* wadah perent flex box */
+.pricing-cards{
+
+  /* wajib flex */
+  display: flex;
+
+  /* atur arah flex item */
+  /* default = row */
+  flex-direction: row;
+
+  /* ataur jarak antar item */
+  gap: 12px;
+
+  /* atur posisi horizontal */
+  /* default = flex-strat */
+  justify-content: center;
+
+  /* atur posisi penetempatan nya 
+  default = flex-end
+  (felx-end, center, streech, */
+  align-items: center;
+ 
+}
+
+.card {
+  background: #fff;
+  padding: 24px 20px;
+  border-radius: 13px;
+  box-shadow:  3px 14px rgba(0,0,0,0.06);
+  width: 230px;
+  text-align: center;
+  border: 2px solid #f5f5f5;
+}
+.card-highlight {
+  border: 2px solid #f26b5e;
+}
+
+
+.harga {
+  font-size: 35px;
+  font-weight: bold;
+  color: #222;
+  margin: 14px 0;
+}
+.price-pro {
+  color: #f26b5e;
+}
+ul {
+  padding: 0;
+  margin-bottom: 18px;
+  list-style: none;
+  color: #222;
+}
+ul li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.button-basic {
+  background: #2093e6;
+  color: #fff;
+  padding: 9px 22px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.button-pro {
+  background: #f26b5e;
+  color: #fff;
+  padding: 9px 22px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.button-bisnis {
+  background: #34c959;
+  color: #fff;
+  padding: 9px 22px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.hr .abu{
+  color: #c7c7c7;
+}
