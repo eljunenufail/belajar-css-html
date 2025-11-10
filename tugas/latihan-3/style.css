@@ -1,72 +1,160 @@
+/* -------------- */
+/* opening */.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+
+
+.opening {
+  text-align: center;
+  margin-bottom: 30px;
+ 
+}
+h1 {
+  font-size: 28px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+.container-opening {
+  align-items: center   ;
+   margin-top: 200px;
+  height: 100vh;
+}
+
+.kiri {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.logo-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logo {
+  width: 30px;      /* atur sesuai kebutuhan */
+  height: auto;
+  border-radius: 10px; /* kalau mau sudut agak melengkung */
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* efek hover */
+}
+.logo-biodata {
+  width: 15px;      /* atur sesuai kebutuhan */
+  height: auto;
+  border-radius: 10px; /* kalau mau sudut agak melengkung */
+  transition: transform 0.2s ease;
+}
+
+
+/* ---------------- */
+
+
+
+
 body {
   
   margin: 40px;
-  background: linear-gradient(270deg, #878ede, #fbfcfe);
-  
+  background:#fff;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Inter, Arial, sans-serif;
+  color: #1f2937;
+  background: #f7f9fb;
+  line-height: 1.6;
+  background-color: #DFDBE5;
+ background-color: #fdfcff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%232862c4' fill-opacity='0.44' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   
 }
-
-
-.box {
-  background: #fff;                /* Latar belakang  web nya putiiih */
-  border: 1px solid #e5e7eb;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
-  border-radius: 12px;             /* Sudut kotak melengkung kagak terlalu tegang */
-  padding: 1000px;                   /* Spasi dalam kotak nya mas*/
-  margin-bottom: 8px;              /* Jarak antar kotak yang ada di atas nya boy */
-  box-shadow: #1d4ed8;
-}
-
-
-
-
 
 /* untuk atasan nya */
 .header {
-  background: rgb(227, 224, 224);
   color: white;
   padding: 15px;        /* jarak dalam */
   text-align: center;     /* biar teks di tengah */
   border-radius: 50px;
 }
+
+/* ===== Navigasi ===== */
 .nav {
-  margin-top: 10px;   /* jarak atas */
-  background: wihite;
-  
-  /* ukuran max 767px => smartphone */
-  @media screen and (max-width: 767px)
-  /* masukkan tag / target selector */
-  padding: 10px;    /* jarak dalam */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
 }
+
 .nav a {
-  display: inline-block;
-  padding: 8px 18px;
-  margin: 5px;
-  border: 1px solid #252525;
-  border-radius: 20px;
   text-decoration: none;
-  color: #374151;
-  font-size: 14px;
-  transition: all 0.3s;
+  color: #0a2e73;
+  border: 1px solid #0a2e73;
+  border-radius: 20px;
+  padding: 8px 14px;
+  transition: 0.3s;
 }
-/* hover itu efek sementara yang muncul saat kursor
-diarahkan ke tombol (tapi belum diklik). */
+
 .nav a:hover {
-  background: blue; /* Kalau mouse diarahkan ke tombol,
-  background-nya berubah jadi biru backround nya.*/
-  color: rgb(255, 255, 255);       /* teks putih saat hover */
+  background-color: #0a2e73;
+  color: white;
 }
 
-
-
-/* artinya tombol dalam keadaan pas ditekan ( kalo misalkan klik mouse masih nempel).
-pas dilepas, efeknya  bakal hilang. */
 .nav a.active {
-  background-color:#1d4ed8;
-  background: #1d4ed8;
-  color:#ffffff;
-  
+  background-color:  #2141ab;
+  color:  #ffffff;
+  border-color:  #2141ab;
 }
-
 /* --------------------------- */
 
 /* untuk bagian isi */
@@ -84,28 +172,22 @@ h1 {
 .section-title {
   padding-left: 10px;              /* jadiin Spasi teks dari garis kiri */
   border-left: 4px solid gold;  /* ngadain Garis tebal hijau di kiri */
-  color:blue;                  /* Warna teks abis garis nya hijau gelap */
+  color:rgb(36, 15, 194);                  /* Warna teks abis garis nya hijau gelap */
 }
 
 /* Box konten */
 .box {
-  background: #fff;                /* Latar belakang  web nya putiiih */
-  border: 1px solid #e5e7eb;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
+  background: white;                /* Latar belakang  web nya putiiih */
+  border: 1px solid #ffffff;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
   border-radius: 12px;             /* Sudut kotak melengkung kagak terlalu tegang */
   padding: 10px;                   /* Spasi dalam kotak nya mas*/
   margin-bottom: 8px;              /* Jarak antar kotak yang ada di atas nya boy */
-  box-shadow: #1d4ed8;
-}
-.kotak {
-  background:rgb(227, 224, 224);                /* Latar belakang  web nya putiiih */
-  border: 1px solid #000000;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
-  border-radius:50px;             /* Sudut kotak melengkung kagak terlalu tegang */
-  padding: 0px;                   /* Spasi dalam kotak nya mas*/
-  margin-bottom: 10px;              /* Jarak antar kotak yang ada di atas nya boy */
-  object-fit: cover; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);      /* Sedikit bayangan biar keliatan ngambang */
 }
 
 /* Foto */
+
+
 .photo {
   border-radius: 50%;              /* Membuat foto lo bulat */
   margin-bottom: 10px;             /* Jarak bawah foto */
@@ -118,6 +200,50 @@ h1 {
   object-fit: cover;               /* Foto menyesuaikan sama kotak  */
   border-radius: 50%;              /* Membuat bentuk lingkaran */
   border: 3px solid #e5e7eb;       /* Garis abu ke putihan tipis di sekeliling foto samain yang kayak di atas nya mas */
+}
+/* ---------------------------------- */
+/* biodata */
+.biodata-container {
+  display: flex;                  /* Susunan horizontal (gambar kiri, teks kanan) */
+  align-items:flex-start;            /* Posisikan atas secara vertikal */
+  justify-content: flex-start;        /* Posisikan kiri secara horizontal */
+  gap: 30px;                      /* Jarak antara gambar dan teks */
+  background: #ffffff;                /* Latar belakang  web nya putiiih */
+  border: 1px solid #ffffff;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
+  border-radius: 12px;             /* Sudut kotak melengkung kagak terlalu tegang */
+  padding: 10px;                   /* Spasi dalam kotak nya mas*/
+  margin-bottom: 8px;              /* Jarak antar kotak yang ada di atas nya boy */
+}
+/* ====== Gambar profil ====== */
+.biodata-container img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;              /* Pastikan foto tidak terdistorsi */
+}
+
+/* ====== Bagian teks biodata ====== */
+.biodata-text {
+  flex: 1;                        /* Supaya teks menyesuaikan sisa ruang */
+}
+
+
+
+.biodata-text p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.none {
+  list-style-type: none;   /* Menghilangkan bullet */
+  padding: 0;              /* Hilangkan jarak default kiri */
+  margin: 0;               /* (opsional) hilangkan margin default */
+}
+.ul {
+  list-style-type: armenian;   /* Menghilangkan bullet */
+  padding: 0;              /* Hilangkan jarak default kiri */
+  margin: 0;               /* (opsional) hilangkan margin default */
 }
 
 /* -------------------------------- */
@@ -141,7 +267,7 @@ h1 {
   color: grey;
 }
 
-.gallery .card {
+.card {
   display: inline-block;   /* biar sejajar ke samping gambar nye waa */
   width: 200px;
   border: 1px solid #ddd;
@@ -149,6 +275,7 @@ h1 {
   margin: 12px;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.1);
 }
 
 
@@ -162,49 +289,51 @@ h1 {
 .gallery .card figcaption {
   font-size: 16px;
   color: #000000;
-  
   padding: 4px;
   
 }
 .gallery .card figcaption {
   font-size: 16px;
-  color: #fff;
-  background-color:grey;
+  color: black;
   margin-top: -7px;
   padding: 4px;
+
   
 }
-audio {
-  margin-top: 20px;
-  width: 300px;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-  border-radius: 10px;
-}
+  audio {
+    margin-top: 20px;
+    width: 300px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    border-radius: 10px;
+  }
+
+
 
 
 /* ------------------- */
 
 /* jadwal */
-.jadwal {
-  background: #f9fafb;
+.table-responsive {
+  overflow-x: auto;    /* biar bisa scroll ke samping di HP */
+  background: #afc2ef;
   border-radius: 10px;
   padding: 20px;
   width: 80%;
   margin: 20px auto;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   
-  
 }
+ 
 
 
 table {
   width: 100%;
-  /** gabungkan border tabel jadi 1 **/
   border-collapse: collapse;
   background: #fff;
   border-radius: 12px;
   padding: 50px;
   object-fit: cover;
+  overflow-x: auto;
 }
 /* pakai , (koma) agar bisa di terapkan multiple efek */
 
@@ -223,11 +352,6 @@ tbody th {
 
 tbody tr:nth-child(even) {
   background: #f3f4f6;}
-  
-  
-  
-  
-  
   
   
   /* ------------------------------- */
@@ -312,9 +436,191 @@ button {
 button:hover {
   background-color: #1e40af;
 }
+/* --------------------------- */
+
+.gallery-item img { 
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; /* Memastikan gambar mengisi penuh area tanpa distorsi */
+  display: block; 
+}
+
+
+/* ====== 3. Video Embed Responsif (Aspek Rasio 16:9) ====== */
+.video-responsive {
+  position: relative;
+  /* Trik untuk menjaga rasio aspek 16:9: (9 / 16) * 100% = 56.25% */
+  padding-bottom: 56.25%; 
+  height: 0; /* Mengatur tinggi ke 0 agar padding-bottom menjadi penentu tinggi */
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 15px;
+  border-radius: 8px; 
+}
+
+.video-responsive iframe {
+  position: absolute; /* Diposisikan relatif terhadap .video-responsive */
+  top: 0;
+  left: 0;
+  width: 100%; /* Mengisi lebar penuh dari pembungkus */
+  height: 100%; /* Mengisi tinggi penuh dari pembungkus */
+  border: none;
+}
+
+
+/* --------------------------- */
+/* responsive */
+/* -----------HP-------------------- */
+/* MEDIA QUERY: Mengubah tata letak navigasi menjadi 1 kolom di layar kecil (Mobile) */
+@media (max-width: 600px) {
+  
+  /* 1. navbar nya */
+  .nav {
+    flex-direction: column; /* Mengubah arah tumpukan item menjadi vertikal */
+    align-items: stretch; /* Memaksa item mengisi seluruh lebar container */
+  }
+  .main-nav a {
+    padding: 10px;
+    width: 100%; /* Memastikan setiap list item mengambil lebar penuh */
+  }
+
+  
+  /* ====== 2. Galeri Gambar (Flexbox responsif) ====== */
+  .gallery-flex {
+    display: flex;
+    flex-wrap: wrap; /* Wajib agar item bisa turun baris */
+    gap: 15px;
+    margin-top: 15px;
+    /* Margin negatif untuk mengimbangi gap di tepi container */
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  } 
+
+/* -------------------------------------- */
+/* 4.feedback */
+
+/* Form mengecil agar pas di layar HP */
+.form-container {
+  width: 90%;
+  margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Ukuran judul lebih kecil di layar HP */
+  h2 {
+    font-size: 17px;
+  }
+  
+  /* Teks label dan input disesuaikan agar tidak terlalu besar */
+  label {
+    font-size: 14px;
+  }
+  
+  input,
+  select,
+  textarea {
+    font-size: 12px;
+  }
+  
+  /* Tombol memenuhi lebar layar dan mudah ditekan */
+  button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+  select {
+  width: 170%;              /* Biar lebar dropdown sesuai lebar form */
+  max-width: 50%;          /* Hindari melewati batas container */
+  box-sizing: border-box;   /* Hitung padding dalam total lebar */
+
+}
+
+/* Saat dropdown di-klik (focus) */
+select:focus {
+  border-color: #4a6cf7;    /* Warna border saat aktif */
+  box-shadow: 0 0 5px rgba(74, 108, 247, 0.4);
+}
+  
+  /* ----------------------------- */
+  /* 5.jadwal */
+  table {
+    font-size: 0.95em;  /* Just a slight decrease if needed, not much */
+    min-width: 500px;   /* Ensures the table will be scrollable */
+  }
+/* ------------------ */
+/* biodata */
+ .biodata-container {
+    flex-direction: column;       /* Gambar di atas, teks di bawah */
+   
+  }
+
+  .biodata-container img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .biodata-text {
+    margin-top: 10px;
+  }
+}
+/* --------------------------------------------------------------------- */
+/* MEDIA QUERY: Mengubah galeri menjadi 1 kolom di layar yang sangat kecil */
+@media (max-width: 480px) {
+  .gallery-item {
+    flex-basis: 100%; /* Memaksa lebar item menjadi 100% pada layar kecil */
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .gallery-flex {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 
 
+
+
+
+/* Tablet (2 kolom) */
+@media(min-width: 600px) and (max-width: 1023px) {
+
+  /* ----------------------- */
+  /* galeri */
+  .card {
+    width: calc(50% - px);
+  }
+
+  /* ------------------------ */
+  /* feedback*/
+  
+  /* Form menyesuaikan lebar layar tablet */
+  .form-container {
+    width: 75% auto; /* Sedikit lebih kecil dari layar penuh */
+    padding: 20px;
+  }
+
+  /* Semua input, dropdown, dan textarea memenuhi lebar container */
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+  }
+  
+select {
+  width: 20%;              /* Biar lebar dropdown sesuai lebar form */
+  max-width: 30%;          /* Hindari melewati batas container */
+  box-sizing: border-box;   /* Hitung padding dalam total lebar */
+
+}
+
+/* Saat dropdown di-klik (focus) */
+select:focus {
+  border-color: #4a6cf7;    /* Warna border saat aktif */
+  box-shadow: 0 0 5px rgba(74, 108, 247, 0.4);
+}
+/* ------------------------- */
+}
 
 
 

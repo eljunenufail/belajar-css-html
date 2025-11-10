@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSI Boarding School</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="top-bar">
+      <img src="logo.png" alt="Logo HSI" class="logo">
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    </div>
+    <h1>HSI BOARDING SCHOOL</h1>
+    <p class="subtitle">Website profile sederhana - kelas X<br>Ahmad Muflih Aljunaid</p>
+
+    <nav class="nav" id="nav">
+      <a href="#">Beranda</a>
+      <a href="#">Biodata</a>
+      <a href="#">Jadwal</a>
+      <a href="#">Galeri</a>
+      <a href="#">Feedback</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="pengantar">
+      <h2>🟡 Pengantar</h2>
+      <p>Selamat datang di website profil sederhana gw. Situs ini berisi biodata, hobi, dan data catatan gw sebagai santri di <b>HSI Boarding School Purworejo</b>.</p>
+    </section>
+
+    <section class="avatar">
+      <h2>🟡 Avatar Favorit</h2>
+      <img src="avatar.jpg" alt="Avatar" class="avatar-img">
+      <p>Yups kalian bisa lihat di atas nih salah satu penulis favorit gw yaitu <i>tere liye</i>...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HSI Boarding School</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
